@@ -45,4 +45,4 @@ SELECT e.name, elevator_id, COUNT(date_lag) AS  relapses
 	where date_lag < 90 
 	GROUP BY e.name, date_lags.elevator_id
 	ORDER BY  relapses DESC 
-	LIMIT 8
+	LIMIT 10 ;
